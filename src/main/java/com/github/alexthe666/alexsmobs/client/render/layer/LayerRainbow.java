@@ -57,6 +57,25 @@ public class LayerRainbow extends RenderLayer {
             case ROBERT -> AMRenderTypes.ROBERT_GLINT;
             case SKULL -> AMRenderTypes.SKULL_GLINT;
             case FRIEREN -> AMRenderTypes.FRIEREN_GLINT;
+            case BLACK -> AMRenderTypes.BLACK_GLINT;
+            case BLUE -> AMRenderTypes.BLUE_GLINT;
+            case BROWN -> AMRenderTypes.BROWN_GLINT;
+            case CYAN -> AMRenderTypes.CYAN_GLINT;
+            case GRAY -> AMRenderTypes.GRAY_GLINT;
+            case GREEN -> AMRenderTypes.GREEN_GLINT;
+            case INDIGO -> AMRenderTypes.INDIGO_GLINT;
+            case MAGENTA -> AMRenderTypes.MAGENTA_GLINT;
+            case OLDYELLOW -> AMRenderTypes.OLDYELLOW_GLINT;
+            case ORANGE -> AMRenderTypes.ORANGE_GLINT;
+            case PALEGREEN -> AMRenderTypes.PALEGREEN_GLINT;
+            case PINK -> AMRenderTypes.PINK_GLINT;
+            case PURPLE -> AMRenderTypes.PURPLE_GLINT;
+            case RED -> AMRenderTypes.RED_GLINT;
+            case REDANDGOLD -> AMRenderTypes.REDANDGOLD_GLINT;
+            case SKYBLUE -> AMRenderTypes.SKYBLUE_GLINT;
+            case SPRINKLES -> AMRenderTypes.SPRINKLES_GLINT;
+            case WHITE -> AMRenderTypes.WHITE_GLINT;
+            case YELLOW -> AMRenderTypes.YELLOW_GLINT;
             default -> AMRenderTypes.RAINBOW_GLINT;
         };
     }

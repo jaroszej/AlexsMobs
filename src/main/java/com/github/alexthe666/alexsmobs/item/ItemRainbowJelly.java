@@ -60,7 +60,7 @@ public class ItemRainbowJelly extends Item {
     }
 
     public enum RainbowType {
-        RAINBOW, TRANS, NONBI, BI, ACE, WEEZER, BRAZIL, CHINA, COOLCAT, GOJO, LOBA, MARIO, PUPPY, RACCOON, SOYJACK, TROLL, JOOMFACE, ROBERT, SKULL, FRIEREN;
+        RAINBOW, TRANS, NONBI, BI, ACE, WEEZER, BRAZIL, CHINA, COOLCAT, GOJO, LOBA, MARIO, PUPPY, RACCOON, SOYJACK, TROLL, JOOMFACE, ROBERT, SKULL, FRIEREN, BLACK, BLUE, BROWN, CYAN, GRAY, GREEN, INDIGO, MAGENTA, OLDYELLOW, ORANGE, PALEGREEN, PINK, PURPLE, RED, REDANDGOLD, SPRINKLES, SKYBLUE, WHITE, YELLOW;
 
 
         public static RainbowType getFromString(String name) {
@@ -118,8 +118,62 @@ public class ItemRainbowJelly extends Item {
             else if (name.contains("skull")) {
                 return SKULL;
             }
-            else if (name.contains("frieren")) {
-                return FRIEREN;
+            else if (name.contains("c:") && (name.contains("black") || (name.contains("blk")))) {
+                return BLACK;
+            }
+            else if ((name.contains("c:") && (name.contains("blue")))) {
+                return BLUE;
+            }
+            else if ((name.contains("c:") && (name.contains("brown")))) {
+                return BROWN;
+            }
+            else if ((name.contains("c:") && (name.contains("cyan")))) {
+                return CYAN;
+            }
+            else if ((name.contains("c:") && (name.contains("gray")) || (name.contains("grey")))) {
+                return GRAY;
+            }
+            else if ((name.contains("c:") && (name.contains("green")))) {
+                return GREEN;
+            }
+            else if ((name.contains("c:") && (name.contains("indigo")))) {
+                return INDIGO;
+            }
+            else if ((name.contains("c:") && (name.contains("magenta")))) {
+                return MAGENTA;
+            }
+            else if ((name.contains("c:") && (name.contains("old") && (name.contains("yellow"))))) {
+                return OLDYELLOW;
+            }
+            else if ((name.contains("c:") && (name.contains("orange")))) {
+                return ORANGE;
+            }
+            else if ((name.contains("c:") && (name.contains("palegreen")))) {
+                return PALEGREEN;
+            }
+            else if ((name.contains("c:") && (name.contains("pink")))) {
+                return PINK;
+            }
+            else if ((name.contains("c:") && (name.contains("purple")))) {
+                return PURPLE;
+            }
+            else if ((name.contains("c:") && (name.contains("red")))) {
+                return RED;
+            }
+            else if ((name.contains("c:") && (name.contains("redgold")))) {
+                return REDANDGOLD;
+            }
+            else if ((name.contains("c:") && (name.contains("skyblue")))) {
+                return SKYBLUE;
+            }
+            else if (name.contains("sprinkles")) {
+                return SPRINKLES;
+            }
+            else if ((name.contains("c:") && (name.contains("white")))) {
+                return WHITE;
+            }
+            else if ((name.contains("c:") && (name.contains("yellow")))) {
+                return YELLOW;
             }
             return RAINBOW;
         }
