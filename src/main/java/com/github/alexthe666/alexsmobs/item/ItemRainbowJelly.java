@@ -60,22 +60,66 @@ public class ItemRainbowJelly extends Item {
     }
 
     public enum RainbowType {
-        RAINBOW, TRANS, NONBI, BI, ACE, WEEZER, BRAZIL;
+        RAINBOW, TRANS, NONBI, BI, ACE, WEEZER, BRAZIL, CHINA, COOLCAT, GOJO, LOBA, MARIO, PUPPY, RACCOON, SOYJACK, TROLL, JOOMFACE, ROBERT, SKULL, FRIEREN;
 
 
         public static RainbowType getFromString(String name) {
             if (name.contains("nonbi") || name.contains("non-bi")) {
                 return NONBI;
-            }else if (name.contains("trans")) {
+            }
+            else if (name.contains("trans")) {
                 return TRANS;
-            }else if (name.contains("bi")) {
+            }
+            else if (name.contains("bi")) {
                 return BI;
-            }else if (name.contains("asexual") || name.contains("ace")) {
+            }
+            else if (name.contains("asexual") || name.contains("ace") && !name.contains("joom")) {
                 return ACE;
-            }else if (name.contains("weezer")) {
+            }
+            else if (name.contains("weezer")) {
                 return WEEZER;
-            }else if (name.contains("brazil")) {
+            }
+            else if (name.contains("brazil")) {
                 return BRAZIL;
+            }
+            else if (name.contains("robert")) {
+                return ROBERT;
+            }
+            else if (name.contains("joom")) {
+                return JOOMFACE;
+            }
+            else if (name.contains("china")) {
+                return CHINA;
+            }
+            else if (name.contains("coolcat")) {
+                return COOLCAT;
+            }
+            else if (name.contains("gojo")) {
+                return GOJO;
+            }
+            else if (name.contains("loba") || (name.contains("apex"))) {
+                return LOBA;
+            }
+            else if (name.contains("mario")) {
+                return MARIO;
+            }
+            else if (name.contains("puppy")) {
+                return PUPPY;
+            }
+            else if (name.contains("raccoon")) {
+                return RACCOON;
+            }
+            else if (name.contains("soyjack")) {
+                return SOYJACK;
+            }
+            else if (name.contains("troll")) {
+                return TROLL;
+            }
+            else if (name.contains("skull")) {
+                return SKULL;
+            }
+            else if (name.contains("frieren")) {
+                return FRIEREN;
             }
             return RAINBOW;
         }
